@@ -1,1 +1,1 @@
-https://moygospadin.github.io/rsschool-cv/
+https://moygospadin.github.io/singolo/

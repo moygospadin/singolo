@@ -417,7 +417,7 @@ div.form button{
     outline:none;
     font-size: 12px;
     line-height: 22px;
-    color: black;
+    color: #f0d8d9;
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
@@ -435,6 +435,7 @@ textarea{
     padding-left:14px;
    box-sizing: border-box;
    padding-top: 9px;
+   color: #f0d8d9;
     
     
 }

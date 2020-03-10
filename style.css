@@ -273,7 +273,8 @@ div.portfolio_nav a:hover{
 }
 div.portfolio_img{
     width: 1020px;
-   
+   overflow: hidden;
+   height: 620px;
     
     padding-top: 19px;
 

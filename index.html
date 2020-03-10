@@ -215,13 +215,15 @@
  <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
    <div class="flex">
-<div class="form">
+<div class="form"> <form action="post">
     <div> <input type="text" class="first" placeholder="Name (Required)" required></div>
     <div> <input type="email" placeholder="Email (Required)" required></div>
     <div> <input type="text" placeholder="Subject"></div>
-    <div> <textarea name="" placeholder="Describe your project in detail..."></textarea></div>     
-    <button type="submit" form="form" value="Submit">Submit</button>
-        
+    <div> <textarea name="" placeholder="Describe your project in detail..."></textarea></div>  
+
+    <button type="submit" formmethod="post" value="Submit">Submit</button> 
+</form>   
+
 </div>
 
 <div class="contact_inf">

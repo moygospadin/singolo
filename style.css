@@ -19,6 +19,10 @@ header {
     top: 0;
 }
 
+.menuBar {
+    display: none;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -163,7 +167,7 @@ div.slider {
 
 .slider .prev:hover,
 .slider .next:hover {
-    opacity: 0.5;
+    opacity: 0.9;
 }
 
 .slider .item {
@@ -195,7 +199,7 @@ div.container_our_services {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 1020px;
+    width: 980px;
 }
 
 div.services {
@@ -204,11 +208,12 @@ div.services {
 }
 
 div.our_services {
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    padding-left: 42px;
+    padding-left: 20px;
     padding-top: 68px;
-    width: 1020px;
+    width: 100%;
 }
 
 div.our_services h1 {
@@ -234,12 +239,12 @@ div.our_services p {
 div.info {
     justify-content: space-between;
     padding-top: 47px;
-    padding-left: 40px;
+    padding-left: 20px;
     padding-bottom: 27px;
 }
 
 div.info ul {
-    width: 1020px;
+    width: 100%;
 }
 
 div.info li {
@@ -501,10 +506,6 @@ div.container_get_a_quote p {
     padding-top: 19px;
 }
 
-form {
-    width: 620px;
-}
-
 form button {
     width: 80px;
     background-color: #5e6894;
@@ -629,10 +630,10 @@ div.mini_inf img {
 /*FOOTER*/
 
 .copyright {
+    padding-left: 8px;
     color: #666d89;
     text-align: center;
     font-size: 11.6px;
-    padding-left: 43px;
     padding-top: 31px;
     cursor: default;
     float: left;
@@ -647,7 +648,7 @@ div.footer {
 }
 
 div.cotainer_footer {
-    width: 1020px;
+    width: 951px;
     height: 76px;
     align-items: center;
     justify-content: center;
@@ -660,7 +661,6 @@ img.copyright {
 }
 
 div.social_footer {
-    padding-right: 33px;
     float: right;
     padding-top: 22px;
 }
@@ -689,7 +689,7 @@ nav a.active {
 #message-block {
     position: fixed;
     width: 100vw;
-    height: 100vw;
+    height: 400vw;
     top: 0;
     left: 0;
     background: #0008;
@@ -701,10 +701,12 @@ nav a.active {
 
 #message {
     position: absolute;
-    margin: 25%;
+    left: 25%;
     border: 3px solid black;
     background: #0009;
     border-radius: 10px;
+    width: 55%;
+    transform: translateY(60%);
 }
 
 .close_btn {
@@ -713,4 +715,396 @@ nav a.active {
 
 #message p {
     margin-left: 10px;
+    margin-left: 10px;
+    width: 95%;
+    word-break: break-all;
+}
+
+@media screen and (min-width:768px) and (max-width:1019px) {
+    .container {
+        width: 768px;
+    }
+    div.info ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 687px;
+    }
+    div.our_services {
+        width: 748px;
+        box-sizing: border-box;
+    }
+    div.container_our_services {
+        width: 748px;
+    }
+    div.our_services p {
+        max-width: 700px;
+        height: 85px;
+    }
+    div.container_about_us {
+        width: 688px;
+    }
+    .container_portfolio {
+        width: 688px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .vertic {
+        width: 181px;
+        margin-right: 50px !important;
+    }
+    .horiz {
+        width: 365px;
+        margin-bottom: 91px !important;
+    }
+    .double_phone img {
+        margin: 0;
+        margin-top: 58px;
+    }
+    .triple_phone {
+        margin: 0 121px 0 121px;
+        width: 400px;
+    }
+    .double_phone {
+        margin: 20px;
+    }
+    div.portfolio_img {
+        padding-top: 27px;
+        height: 820px;
+        width: 688px;
+        display: grid;
+        grid-template-columns: 227px 227px 227px;
+        grid-template-rows: 194px 194px 194px;
+        grid-gap: 9px;
+        overflow: hidden;
+    }
+    .portfolio_img img {
+        width: 216px;
+    }
+    .personImg {
+        width: 218px;
+    }
+    div.persons {
+        padding-top: 27px;
+        width: 235px;
+    }
+    div.team {
+        display: flex;
+        justify-content: normal;
+    }
+    .aboutUsP {
+        width: 688px;
+        height: 100px !important;
+    }
+    div .container_get_a_quote {
+        width: 748px;
+    }
+    textarea {
+        width: 442px;
+    }
+    form input {
+        width: 442px;
+    }
+    .getAQuoteP {
+        width: 689px !important;
+        padding-left: 10px;
+    }
+    div .cotainer_footer {
+        width: 748px;
+    }
+    div .icon {
+        margin-left: 38px;
+        width: 50%;
+    }
+    div.menu {
+        margin-left: 0;
+        margin-top: 5px;
+        width: 60%;
+    }
+    .con {
+        height: 452px;
+    }
+    .blue_bg {
+        height: 456px !important;
+    }
+    .shadow_phone {
+        height: 251px;
+        width: 143px;
+        margin-left: 10px;
+        margin-top: 185px;
+    }
+    .shadow_phone2 {
+        width: 252px;
+        height: 143px;
+        margin-left: 280px;
+        margin-top: 238px
+    }
+    div.our_services {
+        padding-top: 44px;
+    }
+    div.info ul {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        overflow: hidden;
+        grid-column-gap: 52px;
+    }
+    div.info {
+        height: 420px;
+        padding-left: 22px;
+        padding-top: 42px;
+    }
+    div.info li {
+        padding-bottom: 53px;
+    }
+    div.container_portfolio p {
+        width: 695px;
+        height: 60px;
+    }
+    div.portfolio {
+        height: 1096px;
+    }
+    div.portfolio_nav {
+        padding-top: 11px;
+    }
+    div.team h4 {
+        padding-top: 11px;
+    }
+    div.about_us {
+        height: 663px;
+    }
+    div.about_us h3 {
+        padding-top: 56px;
+    }
+    div.team p {
+        padding-top: 0 !important;
+        padding-bottom: 9px;
+    }
+    div.container_get_a_quote h3 {
+        padding-left: 10px;
+    }
+    form {
+        padding-left: 10px;
+    }
+    div.contact_inf p {
+        width: 270px;
+    }
+    div.mini_inf li {
+        width: 200px;
+    }
+    div.contact_inf h3 {
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width:50px) and (max-width:767.99px) {
+    .container {
+        width: 320px;
+    }
+    div.info ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div.our_services {
+        width: 320px;
+        box-sizing: border-box;
+    }
+    div.container_our_services {
+        width: 320px;
+    }
+    div.our_services p {
+        max-width: 320px;
+        height: 85px;
+    }
+    div.container_about_us {
+        width: 320px;
+    }
+    .container_portfolio {
+        width: 320px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .vertic {
+        width: 79px;
+    }
+    .horiz {
+        width: 177px;
+    }
+    .double_phone img {
+        margin: 0;
+        margin-top: 58px;
+    }
+    .triple_phone {
+        margin: 35px;
+        width: 190px;
+    }
+    .slider .prev,
+    .slider .next {
+        padding: 0;
+    }
+    div.portfolio_img {
+        padding-left: 5px;
+        height: 820px;
+        width: 315px;
+        padding-top: 27px;
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 129px 129px 129px 129px;
+        grid-gap: 7px;
+        overflow: hidden;
+    }
+    .portfolio_img img {
+        width: 148px;
+    }
+    .personImg {
+        width: 314px;
+    }
+    div.persons {
+        padding-top: 27px;
+    }
+    div.team {
+        padding-left: 3px;
+        display: flex;
+        justify-content: normal;
+        flex-direction: column;
+    }
+    .aboutUsP {
+        width: 310px;
+        height: 100px !important;
+        padding-left: 10px;
+        height: 210px !important;
+    }
+    div .container_get_a_quote {
+        width: 320px;
+        height: 1020px;
+    }
+    textarea {
+        width: 290px;
+    }
+    form input {
+        width: 290px;
+    }
+    .getAQuoteP {
+        width: 300px !important;
+        height: 207px !important;
+        padding-left: 10px;
+    }
+    div .cotainer_footer {
+        width: 320px;
+    }
+    div .icon {
+        margin-left: 38px;
+        width: 50%;
+    }
+    div.menu {
+        margin-left: 0;
+        margin-top: 5px;
+        width: 60%;
+    }
+    .double_phone {
+        height: 310px;
+    }
+    .con {
+        height: 296px;
+    }
+    .blue_bg {
+        height: 300px !important;
+    }
+    .shadow_phone {
+        height: 251px;
+        width: 143px;
+        margin-left: 10px;
+        margin-top: 185px;
+    }
+    .shadow_phone2 {
+        width: 252px;
+        height: 143px;
+        margin-left: 280px;
+        margin-top: 238px
+    }
+    div.our_services {
+        padding-top: 44px;
+    }
+    div.info ul {
+        display: grid;
+        grid-template-columns: 300px;
+        overflow: hidden;
+        grid-column-gap: 52px;
+    }
+    div.info {
+        height: 420px;
+        padding-left: 22px;
+        padding-top: 42px;
+    }
+    div.info li {
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    div.container_portfolio p {
+        width: 320px;
+        height: 60px;
+    }
+    div.portfolio {
+        height: 1060px;
+    }
+    div.portfolio_nav {
+        padding-top: 11px;
+        padding-left: 10px;
+    }
+    div.container_portfolio h3 {
+        padding-left: 10px;
+    }
+    div.container_portfolio p {
+        padding-left: 10px;
+        width: 300px;
+    }
+    div.team h4 {
+        padding-top: 11px;
+    }
+    div.about_us {
+        height: 1778px;
+    }
+    div.about_us h3 {
+        padding-top: 56px;
+        padding-left: 10px;
+    }
+    div.team p {
+        padding-top: 0 !important;
+        padding-bottom: 9px;
+    }
+    div.container_get_a_quote h3 {
+        padding-left: 10px;
+    }
+    form {
+        padding-left: 10px;
+    }
+    div.contact_inf p {
+        width: 270px;
+    }
+    div.mini_inf li {
+        width: 200px;
+    }
+    div.contact_inf h3 {
+        padding-left: 0;
+    }
+    div.flex {
+        display: block;
+    }
+    div.services {
+        height: 1060px;
+    }
+    div.menu {
+        display: none;
+    }
+    #message {
+        margin-top: 50%;
+    }
+    .menuBar {
+        display: block;
+    }
+}
+
+.menuBar {
+    position: absolute;
+    left: 5%;
 }

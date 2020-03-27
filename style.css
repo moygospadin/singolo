@@ -151,9 +151,8 @@ div.slider {
 
 .blue_bg {
     background-color: #648BF0 !important;
-    height: 600px !important;
     width: 100%;
-    border-bottom: none !important;
+    border-bottom: 4px solid #648BF0;
 }
 
 .slider .prev,
@@ -161,13 +160,21 @@ div.slider {
     cursor: pointer;
     transition: 0.6s ease;
     opacity: 0.5;
-    padding-left: 20px;
-    padding-right: 20px;
+    position: absolute;
+}
+
+.prev {
+    left: 25%;
+}
+
+.next {
+    right: 25%;
 }
 
 .slider .prev:hover,
 .slider .next:hover {
     opacity: 0.9;
+    box-shadow: black;
 }
 
 .slider .item {
@@ -721,6 +728,12 @@ nav a.active {
 }
 
 @media screen and (min-width:768px) and (max-width:1019px) {
+    .prev {
+        left: 7%;
+    }
+    .next {
+        right: 7%;
+    }
     .container {
         width: 768px;
     }
@@ -824,9 +837,6 @@ nav a.active {
     .con {
         height: 452px;
     }
-    .blue_bg {
-        height: 456px !important;
-    }
     .shadow_phone {
         height: 251px;
         width: 143px;
@@ -897,6 +907,12 @@ nav a.active {
 }
 
 @media screen and (min-width:50px) and (max-width:767.99px) {
+    .prev {
+        left: 15%;
+    }
+    .next {
+        right: 15%;
+    }
     .container {
         width: 320px;
     }
@@ -1006,9 +1022,6 @@ nav a.active {
     }
     .con {
         height: 296px;
-    }
-    .blue_bg {
-        height: 300px !important;
     }
     .shadow_phone {
         height: 111px;

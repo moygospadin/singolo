@@ -1011,16 +1011,16 @@ nav a.active {
         height: 300px !important;
     }
     .shadow_phone {
-        height: 251px;
-        width: 143px;
-        margin-left: 10px;
-        margin-top: 185px;
+        height: 111px;
+        width: 63px;
+        margin-left: 4px;
+        margin-top: 167px;
     }
     .shadow_phone2 {
-        width: 252px;
-        height: 143px;
-        margin-left: 280px;
-        margin-top: 238px
+        width: 122px;
+        height: 69px;
+        margin-left: 104px;
+        margin-top: 222px;
     }
     div.our_services {
         padding-top: 44px;
@@ -1106,5 +1106,78 @@ nav a.active {
 
 .menuBar {
     position: absolute;
-    left: 5%;
+    left: 4%;
+    z-index: 100;
+    transform: rotate(0deg);
+    transition: transform 0.4s;
+}
+
+.menuBar:hover {
+    cursor: pointer;
+}
+
+.menuBarOpen {
+    transform: rotate(90deg);
+    transition: transform 0.4s;
+}
+
+.miniMenu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 278px;
+    height: 100vh;
+    background-color: #2d303a;
+    box-shadow: 0 -40px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s;
+    transform: translateX(-100%);
+}
+
+.menulink {
+    margin-top: 55%;
+    margin-left: 25%;
+}
+
+.menulink nav a {
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 75px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.menulink nav a:hover {
+    color: #f06c64;
+    transition: all 0.3s ease;
+}
+
+div.miniIcon h3 {
+    font-size: 25px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+}
+
+.iconMini {
+    position: absolute;
+    left: 37px;
+    top: 42px;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.shadow {
+    position: fixed;
+    width: 100vw;
+    height: 400vw;
+    top: 0;
+    left: 0;
+    background: #0008;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1s;
 }

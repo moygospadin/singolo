@@ -187,6 +187,15 @@
         }
     }
     
+    @media (max-width:450px) {
+        .prev {
+            left: 10px !important;
+        }
+        .next {
+            right: 10px !important;
+        }
+    }
+    
     .slider .prev:hover,
     .slider .next:hover {
         opacity: 0.9;

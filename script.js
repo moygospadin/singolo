@@ -99,6 +99,7 @@ window.onload = function() {
     const design = document.getElementById('design');
     const artwork = document.getElementById('artwork');
     const portfolio_nav = document.getElementById("portf");
+    const portfolioImg = document.getElementById('portfolio_img');
 
     const changePositions = btnId => {
         let positioningArr = [];
@@ -123,15 +124,18 @@ window.onload = function() {
                 break;
         }
         images.forEach((img, i) => {
+
             img.setAttribute('style', `order: ${positioningArr[i]}`);
         });
     }
+
+
+
 
     [webBtn, design, artwork, all].forEach((el) => {
         el.addEventListener('click', (e) => {
             changePositions(e.target.getAttribute('id'));
         });
-
 
     });
 

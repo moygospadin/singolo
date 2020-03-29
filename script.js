@@ -185,12 +185,18 @@ window.onload = function() {
 
     const miniLink = document.querySelectorAll('#miniLink nav a');
 
-
+    function close() {
+        iconMini.classList.remove("iconMini");
+        miniMenu.style.transform = "translateX(-100%)";
+        menuBar.classList.remove("menuBarOpen");
+        shadow.style.display = "none";
+    }
 
     miniLink.forEach((el) => {
         el.addEventListener('click', (event) => {
             miniLink.forEach(el => el.classList.remove('active'));
             event.target.classList.add('active');
+            setTimeout(close, 100);
         });
     });
 

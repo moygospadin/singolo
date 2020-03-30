@@ -1030,7 +1030,10 @@
             padding-left: 10px;
         }
         div .cotainer_footer {
-            width: 320px;
+            width: 158px;
+        }
+        .copyright {
+            display: none;
         }
         div .icon {
             margin-left: 38px;

@@ -1,7 +1,7 @@
 window.onload = function() {
     onChangeScroll();
     /*Скролл */
-    const anchors = document.querySelectorAll('a[href*="#"]');
+    const anchors = document.querySelectorAll('.menu a[href*="#"]');
 
     for (let anchor of anchors) {
         anchor.addEventListener('click', function(e) {
@@ -16,6 +16,7 @@ window.onload = function() {
         });
     }
     /*------------menu---------*/
+
     const MENU = document.getElementById('menu');
     MENU.addEventListener('click', (event) => {
         MENU.querySelectorAll('nav>a').forEach(el => el.classList.remove('active'));

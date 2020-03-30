@@ -921,7 +921,7 @@
         }
     }
     
-    @media screen and (min-width:50px) and (max-width:767.99px) {
+    @media screen and (min-width:50px) and (max-width:767px) {
         .prev {
             left: 15%;
         }

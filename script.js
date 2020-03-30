@@ -1,12 +1,41 @@
 window.onload = function() {
-
+    onChangeScroll();
     /*------------menu---------*/
     const MENU = document.getElementById('menu');
     MENU.addEventListener('click', (event) => {
         MENU.querySelectorAll('nav>a').forEach(el => el.classList.remove('active'));
         event.target.classList.add('active');
     });
+    const NAV = document.getElementById("menu");
+    window.addEventListener("scroll", onChangeScroll);
 
+    function onChangeScroll() {
+
+        const HEADER_HEIGHT = 40;
+        const servicesPosition = document.getElementById("serv").offsetTop - 50;
+        const portfolioPosition = document.getElementById("portfolio").offsetTop - 50;
+        const aboutPosition = document.getElementById("about_us").offsetTop - 50;
+        const contactPosition = document.getElementById("footer").offsetTop - 50;
+
+        const currentPosition = window.pageYOffset;
+        if (currentPosition < servicesPosition) changeActiveNav(0);
+        else if (currentPosition >= servicesPosition && currentPosition < portfolioPosition) changeActiveNav(1);
+        else if (currentPosition >= portfolioPosition && currentPosition < aboutPosition) changeActiveNav(2);
+        else if (currentPosition >= aboutPosition && currentPosition < contactPosition && !isPageEnd()) changeActiveNav(3);
+        if (isPageEnd() || currentPosition >= contactPosition) changeActiveNav(4);
+    }
+
+    function isPageEnd() {
+        return window.pageYOffset >= document.documentElement.offsetHeight - innerHeight;
+    }
+
+    function changeActiveNav(i) {
+        const navLinks = document.querySelectorAll(".home");
+        navLinks.forEach(item => {
+            item.classList.remove("active");
+        });
+        navLinks[i].classList.add("active");
+    };
 
 
     /*---------form-------------*/
